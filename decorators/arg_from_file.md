@@ -13,11 +13,9 @@ Decorators are powerful because they allow you to:
 - **Keep Code Clean and Readable**: Separate core logic from auxiliary features.
 - **Enhance Flexibility**: Easily modify or extend functionality as requirements evolve.
 
-💡 **Example: `arg_from_file` Decorator**
+💡 **Custom Decorator**
 
-Let's take a look at a practical example: the `arg_from_file` decorator. Imagine you have several functions that take string inputs, but sometimes these strings are stored in files. Instead of writing code to read from files every time, you can use the `arg_from_file` decorator to handle this for you automatically.
-
-With this decorator, any function can seamlessly accept either a direct string or a file path containing the string. It's a simple yet elegant solution that saves time and effort!
+In this tech blog, we look at a practical example: our custom `arg_from_file` decorator. With this decorator, any function can seamlessly accept either a direct string or a file path containing the string. It's a simple yet elegant solution that saves time and effort!
 
 🚀 **Why This Matters in Analytics**
 
@@ -35,14 +33,14 @@ In Python, decorators are functions that modify the behavior of other functions.
 - `@contextlib.contextmanager`: This is like a helpful assistant for setting up and cleaning up tasks. It ensures that certain things happen before and after a specific operation, similar to how you might prepare a workspace before starting a project and then tidy up afterward.
 - `@dataclasses.dataclass`:
 This is a shortcut for creating classes that mainly hold data. It automatically adds common methods that you'd typically have to write yourself, saving you time and reducing errors. It's almost like having a robot assistant that fills in standard paperwork for you.
-- `@functools.wraps`: This decorator helps maintain the identity of a function when it's being modified by another function. It's like ensuring that a book keeps its original cover and description even if you add notes or highlights to its pages. This helps other parts of the program recognize and work with the function correctly, even after it's been wrapped or modified.
+- `@functools.wraps`: This decorator helps maintain the identity of a function when it's being modified by another function. It's like ensuring that a book keeps its original cover and description even if you add notes or highlights to its pages. This helps other parts of the program recognise and work with the function correctly, even after it's been wrapped or modified.
 
 and you can also create your own.
 
 ## Example: Custom `arg_from_file` Decorator
 
-This is an example that I have created to allow a function (or method) to load the value of a string argument (input)
-directly from an external file instead of specifying it within the code.
+Let's take a look at a practical example: the `arg_from_file` decorator. Imagine you have several functions that take string inputs, but sometimes these strings are stored in files. Instead of writing code to read from files every time, you can use the `arg_from_file` decorator to handle this for you automatically.
+
 
 ```python
 from pathlib import Path
@@ -61,9 +59,9 @@ def arg_from_file(content_arg="content", encoding="utf-8"):
     return decorator
 ```
 
-## Motivation: Some use cases
+### Motivation: Some use cases
 
-### SQL queries in DuckDB
+#### SQL queries in DuckDB
 
 ```python
 import duckdb
@@ -78,14 +76,14 @@ result = execute_duckdb_query(conn, "path/to/my_query.sql")
 
 How It Works:
 
-- **Decorator Magic**: The @arg_from_file("query") line is like a helper that prepares the function to read from a file if needed.
-- **Calling the Function**: When you call execute_duckdb_query with a path to an SQL file (like "path/to/my_query.sql"), the helper checks if that path points to a file.
+- **Decorator Magic**: The `@arg_from_file("query")` line is like a helper that prepares the function to read from a file if needed.
+- **Calling the Function**: When you call `execute_duckdb_query` with a path to an SQL file (like `"path/to/my_query.sql"`), the helper checks if that path points to a file.
 - **Reading the File**: If it finds a file, it reads the SQL query from that file instead of using the path.
-- **Running the Query**: The function then runs the actual SQL command it just read and gives you the results.
+- **Running the Query**: The function then runs the actual SQL command in [DuckDB](https://duckdb.org) it just read and gives you the results.
 
 This setup lets you keep your SQL commands in separate files, making them easier to manage and update without cluttering your main code.
 
-### Streamlit markdown
+#### Markdown in Streamlit apps
 
 ```python
 import streamlit as st
@@ -106,10 +104,10 @@ Displaying Content: The function then shows that text in your [Streamlit](https:
 
 This approach allows you to keep your written content (like articles or notes) in separate files, making it easier to write and edit without mixing it with your code.
 
-### Motivation and Benefits:
+### Motivation and Benefits
 
 1. Separation of Concerns:
-   - Keeping SQL queries and Markdown content in separate files allows for better organization and maintainability of your code.
+   - Keeping SQL queries and Markdown content in separate files allows for better organisation and maintainability of your code.
    - It's easier to version control and manage changes to your queries and content when they're in dedicated files.
 
 2. Reusability:
@@ -123,7 +121,7 @@ This approach allows you to keep your written content (like articles or notes) i
    - Your main Python code remains clean and focused on logic, while the SQL and Markdown content are stored in their native formats with appropriate syntax highlighting.
 
 5. Easy Maintenance:
-   - Updates to queries or content can be made directly in the .sql or .md files without touching the Python code, reducing the risk of introducing bugs.
+   - Updates to queries or content can be made directly in the `.sql` or `.md` files without touching the Python code, reducing the risk of introducing bugs.
 
 6. Performance:
    - For frequently used queries or content, you can implement caching mechanisms more easily when they're stored in separate files.
