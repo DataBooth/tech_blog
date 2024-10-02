@@ -1,0 +1,26 @@
+[project]
+name = "tech_blog"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Michael Booth", email = "michael@databooth.com.au"},
+]
+dependencies = [
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "Apache 2.0"}
+
+
+[project.optional-dependencies]
+notebook = [
+    "notebook>=7.2.2",
+    "ipywidgets>=8.1.5",
+]
+perspective = [
+    "perspective-python>=3.1.0",
+]
+[tool.pdm]
+distribution = false
