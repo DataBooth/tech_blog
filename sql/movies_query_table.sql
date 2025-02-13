@@ -1,6 +1,6 @@
 -- Query to find the top 10 directors with the highest number of movies in the list
-SELECT director, COUNT(*) AS movie_count
+SELECT Director, COUNT(*) AS num_movies
 FROM movies
-GROUP BY director
-ORDER BY movie_count DESC
-LIMIT 10;
+GROUP BY Director
+ORDER BY num_movies DESC
+LIMIT 15;
