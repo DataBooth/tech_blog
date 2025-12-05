@@ -89,15 +89,16 @@ Users can easily export their customised views to various formats (CSV, JSON, et
 
 By leveraging these features, end users can transform the default views they are provided into highly tailored, interactive data exploration tools that suit their specific needs and workflows. This level of customisation empowers users to gain deeper insights from their data without requiring extensive technical knowledge or developer intervention.
 
-Citations:
-[1] https://gist.github.com/texodus/c42f3189699bd29cf20bbe7dce767b07
-[2] https://helpx.adobe.com/au/illustrator/using/perspective-drawing.html
-[3] https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-personalise-visuals?tabs=powerbi-desktop
-[4] https://data-marc.com/2020/08/18/power-bi-visual-customisation-using-perspectives/
-[5] https://www.datahai.co.uk/power-bi/using-power-bis-personalised-visuals-as-a-stepping-stone-to-self-service-bi/
-[6] https://www.youtube.com/watch?v=zwj7CtOGcuY
-[7] https://www.youtube.com/watch?v=lIm9dHc8fOk
-[8] https://perspective.finos.org/docs/js/
+## References
+
+[1] https://gist.github.com/texodus/c42f3189699bd29cf20bbe7dce767b07  
+[2] https://helpx.adobe.com/au/illustrator/using/perspective-drawing.html  
+[3] https://learn.microsoft.com/en-us/power-bi/create-reports/power-bi-personalise-visuals?tabs=powerbi-desktop  
+[4] https://data-marc.com/2020/08/18/power-bi-visual-customisation-using-perspectives/  
+[5] https://www.datahai.co.uk/power-bi/using-power-bis-personalised-visuals-as-a-stepping-stone-to-self-service-bi/  
+[6] https://www.youtube.com/watch?v=zwj7CtOGcuY  
+[7] https://www.youtube.com/watch?v=lIm9dHc8fOk  
+[8] https://perspective.finos.org/docs/js/  
 
 
 ## Comparison with Power BI and Tableau-like tools
@@ -145,18 +146,18 @@ Perspective's support for streaming data makes it ideal for creating dashboards 
 
 While Power BI and Tableau excel in providing comprehensive business intelligence solutions for a wide range of users, Perspective shines in scenarios requiring high-performance data handling, extensive customisation, and integration with Python-based data science workflows.
 
-Citations:
-[1] https://community.fabric.microsoft.com/t5/Desktop/Perspectives-in-Power-BI/td-p/3579236
-[2] https://www.datahai.co.uk/power-bi/using-power-bis-personalised-visuals-as-a-stepping-stone-to-self-service-bi/
-[3] https://www.flip-design.de/?p=1014
-[4] https://data-marc.com/2020/08/18/power-bi-visual-customisation-using-perspectives/
-[5] https://www.youtube.com/watch?v=lIm9dHc8fOk
-[6] https://community.fabric.microsoft.com/t5/Desktop/Can-I-use-perspectives-in-model-relationship-view/td-p/1741752
-[7] https://www.youtube.com/watch?v=zwj7CtOGcuY
-[8] https://community.fabric.microsoft.com/t5/Service/Perspectives-are-necessary-to-make-use-of-certain-types-of/m-p/3387672
+## References
 
 
-I apologise for the confusion. Let me provide a comparison between Perspective and Apache Superset:
+[1] https://community.fabric.microsoft.com/t5/Desktop/Perspectives-in-Power-BI/td-p/3579236  
+[2] https://www.datahai.co.uk/power-bi/using-power-bis-personalised-visuals-as-a-stepping-stone-to-self-service-bi/  
+[3] https://www.flip-design.de/?p=1014  
+[4] https://data-marc.com/2020/08/18/power-bi-visual-customisation-using-perspectives/  
+[5] https://www.youtube.com/watch?v=lIm9dHc8fOk  
+[6] https://community.fabric.microsoft.com/t5/Desktop/Can-I-use-perspectives-in-model-relationship-view/td-p/1741752  
+[7] https://www.youtube.com/watch?v=zwj7CtOGcuY  
+[8] https://community.fabric.microsoft.com/t5/Service/Perspectives-are-necessary-to-make-use-of-certain-types-of/m-p/3387672  
+
 
 ## Perspective vs Apache Superset
 
@@ -220,12 +221,13 @@ Perspective is primarily a data visualisation and analytics library, while Apach
 
 In summary, Perspective is better suited for developers and data scientists who need to build custom, high-performance data exploration tools, especially for large or streaming datasets. Apache Superset, on the other hand, is a more comprehensive business intelligence solution that caters to a wider range of users and use cases, with less need for custom development.
 
-Citations:
-[1] https://www.restack.io/docs/superset-knowledge-apache-superset-vs-preset-comparison
-[2] https://www.restack.io/docs/superset-knowledge-apache-superset-vs-competitors
-[3] https://www.cloudthat.com/resources/blog/a-comparison-between-apache-superset-and-grafana
-[4] https://superset.apache.org
-[5] https://preset.io/blog/apache-superset-vs-tableau/
-[6] https://trevor.io/blog/apache-superset-alternatives
-[7] https://www.youtube.com/watch?v=lIm9dHc8fOk
-[8] https://community.fabric.microsoft.com/t5/Service/Perspectives-are-necessary-to-make-use-of-certain-types-of/m-p/3387672
+## References
+
+[1] https://www.restack.io/docs/superset-knowledge-apache-superset-vs-preset-comparison  
+[2] https://www.restack.io/docs/superset-knowledge-apache-superset-vs-competitors  
+[3] https://www.cloudthat.com/resources/blog/a-comparison-between-apache-superset-and-grafana  
+[4] https://superset.apache.org  
+[5] https://preset.io/blog/apache-superset-vs-tableau/  
+[6] https://trevor.io/blog/apache-superset-alternatives  
+[7] https://www.youtube.com/watch?v=lIm9dHc8fOk  
+[8] https://community.fabric.microsoft.com/t5/Service/Perspectives-are-necessary-to-make-use-of-certain-types-of/m-p/3387672  
